@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace CarLotSimulator
 {
@@ -17,6 +18,30 @@ namespace CarLotSimulator
             //Now that the Car class is created we can instanciate 3 new cars
             //Set the properties for each of the cars
             //Call each of the methods for each car
+
+            Car subuwu = new Car();
+            subuwu.Year = 2023;
+            subuwu.Make = "Subaru";
+            subuwu.Model = "Crosstrek";
+            subuwu.EngineNoise = "Vroooooooommmmmmm";
+            subuwu.HonkNoise = "Beep boop";
+            subuwu.IsDriveable = true;
+
+            subuwu.MakeEngineNoise();
+            subuwu.MakeHonkNoise();
+
+            Car suburu = new Car() { Year = 2012, Make = "Suburu", Model = "Outback", EngineNoise = "Vrum", HonkNoise = "Bep"};
+
+            suburu.MakeEngineNoise();
+            suburu.MakeHonkNoise();
+
+
+            Car miniCooper = new Car(2024,"Mini Cooper","Hatchback","VREEEEM","Beepidy Boopidy");
+
+            miniCooper.MakeEngineNoise();
+            miniCooper.MakeHonkNoise();
+
+
 
             //*************BONUS*************//
 
